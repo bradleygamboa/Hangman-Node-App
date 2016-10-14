@@ -1,3 +1,4 @@
+//pulls exported files into main.js
 var game = require("./game.js");
 var wordCons = require("./word.js");
 var letterCons = require("./letter.js");
