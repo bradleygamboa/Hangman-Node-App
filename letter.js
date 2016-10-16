@@ -1,4 +1,4 @@
-//makes letter appear either blank or as the letter entered
+//makes letter appear either blank or as the letter entered 
 exports.letter = letter;
 
 function letter(value) {

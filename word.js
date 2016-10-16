@@ -1,6 +1,6 @@
 //checks the letters guessed
 var letterCons = require("./letter.js");
-
+//words function
 function word(value){
 	this.value = value;
 	this.letters = [];
@@ -9,14 +9,14 @@ function word(value){
 		this.letters.push(new letterCons.letter(this.value[i]));
 	}
 };
-
+//whant completed
 word.prototype.isComplete = function(){
 	for(var i = 0; i < this.letters.length; i++){
 		if(!this.letters[i].show) return false;
 	}
 	return true;
 }
-
+//guessing letters
 word.prototype.findLetter = function(letter){
 	var lowerLetter = letter.toLowerCase();
 	if (this.guessesMade.indexOf(lowerLetter) != -1) {
@@ -30,7 +30,7 @@ word.prototype.findLetter = function(letter){
 		}
 	}
 };
-
+//test if string
 word.prototype.toString = function(){
   var output = "";
   for(var i=0; i<this.letters.length; i++){

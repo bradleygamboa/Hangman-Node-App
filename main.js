@@ -9,7 +9,7 @@ exports.letter;
 
 var myWord = new wordCons.wordCons(game.randomWord);
 var maxGuesses = 15;
-
+//starts gaame
 function takeAGuess(){
 	console.log(myWord.toString());
 	//ends game
